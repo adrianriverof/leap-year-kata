@@ -18,4 +18,12 @@ public class Tests {
 		
 		Assert.AreEqual(false, sut.is_leap(5));
 	}
+	
+	[Test]
+	public void if_divisible_by_4_is_leap()
+	{
+		Leapyearcalculator sut = new Leapyearcalculator();
+		
+		Assert.AreEqual(true, sut.is_leap(40));
+	}
 }
