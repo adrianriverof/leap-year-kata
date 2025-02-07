@@ -1,6 +1,6 @@
 ﻿namespace Project;
 
-public class Leapyearcalculator
+public class Year
 {
 	static void Main()
 	{

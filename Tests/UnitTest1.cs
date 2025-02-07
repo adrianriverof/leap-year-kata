@@ -15,7 +15,7 @@ public class Tests {
 	[Test]
 	public void if_not_divisible_by_4_is_not_leap()
 	{
-		Leapyearcalculator sut = new Leapyearcalculator();
+		Year sut = new Year();
 		
 		Assert.AreEqual(false, sut.is_leap(5));
 	}
@@ -23,7 +23,7 @@ public class Tests {
 	[Test]
 	public void if_divisible_by_4_is_leap()
 	{
-		Leapyearcalculator sut = new Leapyearcalculator();
+		Year sut = new Year();
 		
 		Assert.AreEqual(true, sut.is_leap(1996));
 	}
@@ -31,14 +31,14 @@ public class Tests {
 	[Test]
 	public void if_divisible_by_400_year_is_leap()
 	{
-		Leapyearcalculator sut = new Leapyearcalculator();
+		Year sut = new Year();
 		Assert.AreEqual(true, sut.is_leap(800));
 	}
 	
 	[Test]
 	public void if_divisible_by_100_but_not_by_400_is_not_leap()
 	{
-		Leapyearcalculator sut = new Leapyearcalculator();
+		Year sut = new Year();
 		
 		Assert.AreEqual(false, sut.is_leap(200));
 	}
@@ -46,7 +46,7 @@ public class Tests {
 	[Test]
 	public void year_1997_is_not_leap()
 	{
-		Leapyearcalculator sut = new Leapyearcalculator();
+		Year sut = new Year();
 		
 		Assert.That(sut.is_leap(1997), Is.False);
 	}
@@ -62,7 +62,7 @@ public class Tests {
 	[Test, TestCaseSource(nameof(YearsToTestData))]
 	public void Test_Years(int year, bool isLeap)
 	{
-		Leapyearcalculator sut = new Leapyearcalculator();
+		Year sut = new Year();
 		Assert.That(sut.is_leap(year), Is.EqualTo(isLeap));
 	}
 	
