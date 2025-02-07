@@ -26,4 +26,13 @@ public class Tests {
 		
 		Assert.AreEqual(true, sut.is_leap(40));
 	}
+	
+	[Test]
+	public void if_divisible_by_400_year_is_leap()
+	{
+		Leapyearcalculator sut = new Leapyearcalculator();
+		Assert.AreEqual(true, sut.is_leap(800));
+	}
+
+	
 }
