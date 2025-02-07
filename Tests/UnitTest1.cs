@@ -1,3 +1,5 @@
+using Project;
+
 namespace Tests;
 
 public class Tests {
@@ -16,5 +18,4 @@ public class Tests {
 		
 		Assert.AreEqual(false, sut.is_leap(5));
 	}
-	
 }

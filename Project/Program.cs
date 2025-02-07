@@ -1,7 +1,14 @@
 ﻿namespace Project;
 
-class Program {
-	static void Main(string[] args) {
-		Console.WriteLine("Hello, World!");
+public class Leapyearcalculator
+{
+	static void Main()
+	{
+		
+	}
+
+	public bool is_leap(int year)
+	{
+		return false;
 	}
 }
