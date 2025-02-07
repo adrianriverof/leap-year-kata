@@ -48,7 +48,7 @@ public class Tests {
 	{
 		Leapyearcalculator sut = new Leapyearcalculator();
 		
-		Assert.That(sut.is_leap(1997), Is.EqualTo(false));
+		Assert.That(sut.is_leap(1997), Is.False);
 	}
 
 	private static IEnumerable<TestCaseData> YearsToTestData()
