@@ -13,12 +13,6 @@ public class Leapyearcalculator
 		{
 			return false;
 		}
-		if ((year % 4) == 0)
-		{
-			return true;
-		}
-
-		
-		return false;
+		return (year % 4) == 0;
 	}
 }
