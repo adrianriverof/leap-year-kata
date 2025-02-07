@@ -7,7 +7,7 @@ public class Year
 		
 	}
 
-	public bool is_leap(int year)  
+	public bool IsLeap(int year)  
 	{
 		if (((year % 100) == 0) && ((year % 400) != 0) )
 		{

@@ -17,7 +17,7 @@ public class Tests {
 	{
 		Year sut = new Year();
 		
-		Assert.AreEqual(false, sut.is_leap(5));
+		Assert.AreEqual(false, sut.IsLeap(5));
 	}
 	
 	[Test]
@@ -25,14 +25,14 @@ public class Tests {
 	{
 		Year sut = new Year();
 		
-		Assert.AreEqual(true, sut.is_leap(1996));
+		Assert.AreEqual(true, sut.IsLeap(1996));
 	}
 	
 	[Test]
 	public void if_divisible_by_400_year_is_leap()
 	{
 		Year sut = new Year();
-		Assert.AreEqual(true, sut.is_leap(800));
+		Assert.AreEqual(true, sut.IsLeap(800));
 	}
 	
 	[Test]
@@ -40,7 +40,7 @@ public class Tests {
 	{
 		Year sut = new Year();
 		
-		Assert.AreEqual(false, sut.is_leap(200));
+		Assert.AreEqual(false, sut.IsLeap(200));
 	}
 	
 	[Test]
@@ -48,7 +48,7 @@ public class Tests {
 	{
 		Year sut = new Year();
 		
-		Assert.That(sut.is_leap(1997), Is.False);
+		Assert.That(sut.IsLeap(1997), Is.False);
 	}
 
 	private static IEnumerable<TestCaseData> YearsToTestData()
@@ -63,7 +63,7 @@ public class Tests {
 	public void Test_Years(int year, bool isLeap)
 	{
 		Year sut = new Year();
-		Assert.That(sut.is_leap(year), Is.EqualTo(isLeap));
+		Assert.That(sut.IsLeap(year), Is.EqualTo(isLeap));
 	}
 	
 	
