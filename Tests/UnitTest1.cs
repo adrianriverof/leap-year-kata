@@ -41,6 +41,16 @@ public class Tests {
 		
 		Assert.AreEqual(false, sut.is_leap(200));
 	}
-
 	
+	[Test]
+	public void year_1997_is_not_leap()
+	{
+		Leapyearcalculator sut = new Leapyearcalculator();
+		
+		Assert.That(sut.is_leap(1997), Is.EqualTo(true));
+	}
+	
+	
+	
+
 }
