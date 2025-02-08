@@ -9,9 +9,9 @@ public class Year
 
 	private readonly int _year;
 
-	public Year(int number_to_be_year)
+	public Year(int numberToBeYear)
 	{
-		_year = number_to_be_year;
+		_year = numberToBeYear;
 	}
 	
 	public bool IsLeap(int year)  
